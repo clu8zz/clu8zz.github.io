@@ -2,8 +2,152 @@
 <html>
 <head>
 	<title>Hevon Gordon</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+	 <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
-Hevon GOrdon
+
+ 
+
+
+
+   <!--Call your modal-->
+
+    <!-- <a id="demo01" href="#animatedModal">DEMO01</a>
+ -->
+    <!--DEMO01-->
+
+
+    <div class="head">
+    	
+    	<p><center><span class="name">Hevon Gordon</span></center></p>
+    	<p><center><span class="subname">Web Developer Extraordinaire</span></center></p>
+    </div>
+
+
+
+
+
+<!-- 
+    <div class="row second">
+    	<div class="col l4 s12 m6">
+    		 <div class="card">
+            <div class="card-image hand">
+              <img src="img/campus.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a id="demo01" href="#animatedModal">This is a link</a>
+            </div>
+          </div>
+    	</div>
+
+
+    	<div class="col l4 s12 m6">
+    		 <div class="card">
+            <div class="card-image hand">
+              <img src="img/campus.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+    	</div>
+    	<div class="col l4 s12 m6">
+    		 <div class="card">
+            <div class="card-image hand">
+              <img src="img/campus.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+    	</div>
+    		
+    	</div> -->
+ 
+
+    <div id="animatedModal" class="row">
+    <div class="col l12 s12">
+    	 <div class="close-animatedModal">
+        <center>
+        	<div class="close"> <i class="material-icons icon">close</i></div>
+        </center> 
+           
+        </div>
+            
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+        </div>
+    </div>
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+       
+    </div>
+
+
+
+
+<style type="text/css">
+.head{
+
+	height:300px;
+}
+.second{
+	background-color: gray;
+}
+.close{
+	margin-top: 50px;
+	width:50px;
+	height:50px;
+	border:1px solid white;
+	border-radius: 50px;
+	cursor: pointer;
+	 cursor: hand; 
+}
+.icon{
+	font-size: 3rem;
+	margin-top:2.5px;
+	color:white;
+}
+.hand{
+	cursor: pointer;
+	 cursor: hand; 
+}
+
+.name{
+	font-family: 'Alegreya Sans SC';
+	font-size:100px;
+}
+.subname{
+	font-family: 'Alegreya Sans SC';
+	font-size:40px;
+}
+
+</style>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script>
+  $("#demo01").animatedModal();
+</script>
 </body>
 </html>
