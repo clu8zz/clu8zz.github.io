@@ -4,6 +4,7 @@
 	<title>Hevon Gordon</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=League+Script' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
 	 <link rel="stylesheet" href="css/animate.min.css">
 </head>
@@ -23,12 +24,68 @@
     <div class="head">
     	
     	<p><center><span class="name">Hevon Gordon</span></center></p>
-    	<p><center><span class="subname">Web Developer Extraordinaire</span></center></p>
+    	<p><center><span class="subname">Web Development Extraordinaire</span></center></p>
+    </div>
+
+    <div class="second ">
+     <div class="container">
+    <div class="row">
+    	<div class="col l4 s4 m4 firstr"><span class="addlabel"><a class="menuline" href="#animatedModal">CODE</a></span><span class="addition addlabel  right">+</span></div>
+    	<div class="col l4 s4 m4 secondr"><center><span class="addlabel"><a class="menuline" href="#animatedModal">DESIGN</a></span></center></div>
+    	<div class="col l4 s4 m4 thirdr"><span class="addition">=</span><span class="addlabel right"><a class="menuline" href="#animatedModal">ELEGANCE</a></span></div>
+    </div>
+    	<br>
+    	<br>
+
+
+    	<div class="contact"><center>Get in contact today</center></div>
+    	<center>
+    	<img src="img/social.png">
+    	</center>
+    	<div class="row">
+    	<center>
+    		<div class="col l4 s12 m12 roun">
+    			
+			            <div class="card-image conts">
+			             <img class="conts" src="img/twitter.png">
+			            </div>
+		         	 
+    		</div>
+
+
+    		<div class="col l4 s12 m12 roun">
+    				
+			            <div class="card-image conts">
+			             <img class="conts" src="img/facebook.png">
+			            </div>
+		         	 
+    			
+    		</div>
+
+
+
+    		<div class="col l4 s12 m12 roun">
+		    		
+			            <div class="card-image conts">
+			            <center>
+			              <img class="conts" src="img/google.png">
+			              </center>
+			            </div>
+		         	 
+    			
+    		</div>
+    		</center>
+    	</div>
+    </div>
+    	
     </div>
 
 
-
-
+        
+         
+         
+        
+              
 
 <!-- 
     <div class="row second">
@@ -104,13 +161,19 @@
 
 
 <style type="text/css">
+.addlabel{
+	font-family: 'Alegreya Sans SC';
+	font-size:18px;
+
+}
 .head{
 
 	height:300px;
 }
+
 .second{
-	background-color: gray;
-}
+	height:400px;
+	}
 .close{
 	margin-top: 50px;
 	width:50px;
@@ -138,7 +201,54 @@
 	font-family: 'Alegreya Sans SC';
 	font-size:40px;
 }
+.firstr{
+	margin-top: 35px:;
 
+background-color: white;
+
+}
+.secondr{
+	margin-top: 35px:;
+
+background-color: white;
+}
+.thirdr{
+	margin-top: 35px:;
+
+
+
+background-color: white;
+}
+.right{
+	float:right;
+}
+a{
+	color:black;
+}
+
+.menuline:hover{
+	 -webkit-animation-timing-function:ease-in;
+	animation-timing-function:ease-in;
+	animation-timing-function:ease-in;
+	border-top:2px solid #bbdefb;
+	border-bottom: 2px solid black;
+	padding:4px;
+
+	
+
+	
+	
+
+}
+.contact{
+	font-family: 'League Script', cursive;
+	font-size: 75px;
+}
+
+.conts{
+	width:100px;
+	height:100px;
+}
 </style>
 
 
@@ -147,7 +257,7 @@
 <script type="text/javascript" src="materialize/js/materialize.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
 <script>
-  $("#demo01").animatedModal();
+  $(".menuline").animatedModal();
 </script>
 </body>
 </html>
