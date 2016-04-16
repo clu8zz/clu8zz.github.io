@@ -31,9 +31,9 @@
     <div class="second ">
      <div class="container">
     <div class="row">
-    	<div class="col l4 s4 m4 firstr"><span class="addlabel"><a class="menuline" href="#animatedModal">CODE &nbsp</a></span><span class="addition addlabel  right"><i class="material-icons meadium">add</i></span></div>
-    	<div class="col l4 s4 m4 secondr"><center><span class="addlabel"><a class="menuline" href="#animatedModal">DESIGN</a></span></center></div>
-    	<div class="col l4 s4 m4 thirdr"><span class="addition equal">=</span><span class="addlabel right"><a class="menuline" href="#animatedModal">ELEGANCE</a></span></div>
+    	<div class="col l4 s4 m4 firstr"><span class="addlabel"><a class="menuline code" href="#code">CODE &nbsp</a></span><span class="addition addlabel  right"><i class="material-icons meadium">add</i></span></div>
+    	<div class="col l4 s4 m4 secondr"><center><span class="addlabel"><a class="menuline design" href="#design">DESIGN</a></span></center></div>
+    	<div class="col l4 s4 m4 thirdr"><span class="addition equal">=</span><span class="addlabel right"><a class="menuline elegance" href="#elegance">ELEGANCE</a></span></div>
     </div>
     	<br>
     	<br>
@@ -86,22 +86,62 @@
 
    
 
-    <div id="animatedModal" class="row">
+    <div id="code" class="row">
     <div class="col l12 s12">
-    	 <div class="close-animatedModal">
+    	 <div class="close-code">
         <center>
         	<div class="close"> <i class="material-icons icon">close</i></div>
         </center> 
            
         </div>
             
-        <div class="modal-content">
-                  <!--Your modal content goes here-->
+        <div class="modal-content white-text">
+                <div class="font "><center>CODE</center></div>
         </div>
     </div>
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        
        
     </div>
+
+
+    <div id="design" class="row">
+    <div class="col l12 s12">
+    	 <div class="close-design">
+        <center>
+        	<div class="close"> <i class="material-icons icon">close</i></div>
+        </center> 
+           
+        </div>
+            
+        <div class="modal-content white-text">
+                 <div class="font "><center>DESIGN</center></div>
+        </div>
+    </div>
+        
+       
+    </div>
+
+
+
+    <div id="elegance" class="row">
+    <div class="col l12 s12">
+    	 <div class="close-elegance">
+        <center>
+        	<div class="close"> <i class="material-icons icon">close</i></div>
+        </center> 
+           
+        </div>
+            
+        <div class="modal-content white-text">
+                <div class="font "><center>ELEGANCE</center></div>
+        </div>
+    </div>
+        
+       
+    </div>
+
+
+
 
 
 
@@ -145,7 +185,17 @@
 	cursor: pointer;
 	 cursor: hand; 
 }
+.icon:hover{
+	
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+}
 .icon{
+
 	font-size: 3rem;
 	margin-top:2.5px;
 	color:white;
@@ -235,23 +285,28 @@ transition: background-position 0.5s;
 <script type="text/javascript" src="materialize/js/materialize.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
 <script>
-var one=$('.one');
-var two=$('.two');
-var three=$('.three');
-var options = [
-    {selector: '.one', offset: 50, callback: function() {
-      Materialize.toast("This is our ScrollFire Demo!", 1500 );
-    } },
-    {selector: '.two', offset: 205, callback: function() {
-      Materialize.toast("This is our ScrollFire Demo!", 1500 );
-    } },
 
-    {selector: '.three', offset: 400, callback: function() {
-       Materialize.toast("This is our ScrollFire Demo!", 1500 );
-    } }
-    ]
- Materialize.scrollFire(options);
-  $(".menuline").animatedModal();
+  $(".code").animatedModal({
+  	modalTarget:'code',
+  	animatedIn:'bounceInRight',
+	animatedOut:'bounceOutDown',
+	color:'black'
+  });
+
+
+  $(".design").animatedModal({
+  	modalTarget:'design',
+  	animatedIn:'bounceInRight',
+	animatedOut:'bounceOutDown',
+	color:'black'
+  });
+
+  $(".elegance").animatedModal({
+  	modalTarget:'elegance',
+  	animatedIn:'bounceInRight',
+	animatedOut:'bounceOutDown',
+	color:'black'
+  });
 </script>
 </body>
 </html>
