@@ -48,7 +48,7 @@
     		<div class="col l4 s4 m4 roun">
     			
 			            <div class="card-image conts">
-			             <img class="conts" src="img/twitter.png">
+			             <a href="#"><img class="conts" src="img/twitter.png"></a>
 			            </div>
 		         	 
     		</div>
@@ -57,7 +57,7 @@
     		<div class="col l4 s4 m4 roun">
     				
 			            <div class="card-image conts">
-			             <img class="conts" src="img/facebook.png">
+			             <a href="#"><img class="conts" src="img/facebook.png"></a>
 			            </div>
 		         	 
     			
@@ -69,8 +69,8 @@
 		    		
 			            <div class="card-image conts">
 			            <center>
-			              <img class="conts" src="img/google.png">
-			              </center>
+			              <a href="#"><img class="conts" src="img/google.png"></a>			  
+			            </center>
 			            </div>
 		         	 
     			
@@ -80,34 +80,7 @@
 
 
     		<div class="divider"></div>
-    		<div class="para col l12 s12 m12">
-		    	<div class="row">
-
-		    	
-		    		<div class="col l3 s12 m12 ">
-		    			<div class="one font" ><div class="align"><center>CAMPUS FLATS</center></div></div>
-		    		</div>
-
-		    
-
-		    		
-		    		<div class="col l6 s12 m12">
-		    		<center>
-		    			<div class="two font" ><div class="align-two"><center>CAMPUS FLATS</center></div></div>
-		    		</center>
-		    			
-		    		</div>
-		    				    	
-
-		    		
-		    		<div class="col l3 s12 m12">
-		    			<div class="three font" ><div class="align"><center>CAMPUS FLATS</center></div></div>
-		    		</div>
-		    	
-
-
-		    	</div>
-    		</div>
+    	
 
 
     	</div>
@@ -226,10 +199,15 @@ a{
 
 border: 3px solid black;
 padding:6px;
+background-size: 100% 200%;
+background-image: linear-gradient(to bottom, white 50%, black 50%);
+transition: background-position 0.5s;
+
 }
 .menuline:hover{
+	color:white;
+	background-position: 0 -100%;
 	
-	background-color: #bbdefb;	
 	
 
 }
@@ -253,63 +231,8 @@ padding:6px;
 .equal{
 	font-size:2em;
 }
-.one{
-	float:left;
-	height:250px;
-	width:250px !important;
-	border-radius: 250px;
-	border: 3px solid black;
-	font-size:30px;
 
-	background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, white 50%, black 50%);
-    transition: background-position 0.5s;
 
-}
-.one:hover{
-	background-position: 0 -100%;
-	color:white;
-	font-family: 'Raleway', sans-serif;
-	font-size:26px;
-
-}
-.two{
-height:300px;
-	width:300px !important;
-	border-radius: 300px;
-	border: 3px solid black;
-	font-size:30px;
-	color:white;
-	background-size: 100% 200%;
-    background-image: linear-gradient(to top, white 50%, black 50%);
-    transition: background-position 0.5s;
-}
-.two:hover{
-	background-position: 0 -100%;
-	color:black;
-	font-family: 'Raleway', sans-serif;
-	font-size:35px;
-}
-
-.three{
-	float:right;
-	height:250px;
-	width:250px !important;
-	border-radius: 250px;
-	border: 3px solid black;
-	font-size:30px;
-
-	background-size: 100% 200%;
-    background-image: linear-gradient(to top, black 50%, white 50%);
-    transition: background-position 0.5s;
-}
-
-.three:hover{
-	background-position: 0 -100%;
-	color:white;
-	font-family: 'Raleway', sans-serif;
-	font-size:26px;
-}
 </style>
 
 
